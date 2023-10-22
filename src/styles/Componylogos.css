@@ -1,0 +1,32 @@
+.logo-carousel-container {
+    display: flex;
+    overflow: hidden;
+    
+  }
+  
+  .logo-carousel {
+    display: flex;
+    animation: logoCarousel 300s linear infinite;  
+  }
+  
+  
+  .logo-carousel li {
+    width: 150px;  
+    height: auto;  
+    margin-right: 100px;  
+  }
+  @media (min-width: 425px) {
+    .logo-carousel li{
+
+        margin-right: 60px ;
+    }
+  }
+  
+  @keyframes logoCarousel {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);  
+    }
+  }
